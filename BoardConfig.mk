@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/motorola/fogo
+DEVICE_PATH := device/motorola/penang
 
 # Inherit from motorola sm6375-common
 include device/motorola/sm6375-common/BoardConfigCommon.mk
@@ -12,7 +12,7 @@ include device/motorola/sm6375-common/BoardConfigCommon.mk
 AUDIO_FEATURE_ENABLED_EXT_AMPLIFIER := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := fogo
+TARGET_BOOTLOADER_BOARD_NAME := penang
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
@@ -21,8 +21,8 @@ ODM_MANIFEST_DN_FILES := $(DEVICE_PATH)/sku/manifest_dn.xml
 ODM_MANIFEST_N_FILES := $(DEVICE_PATH)/sku/manifest_n.xml
 
 # Kernel
-BOARD_KERNEL_CMDLINE += androidboot.hab.product=fogo
-TARGET_KERNEL_CONFIG += vendor/ext_config/moto-holi-fogo.config
+BOARD_KERNEL_CMDLINE += androidboot.hab.product=penang
+TARGET_KERNEL_CONFIG += vendor/ext_config/moto-holi-penang.config
 
 # Kernel Modules
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
@@ -51,8 +51,8 @@ BOOT_SECURITY_PATCH := 2025-06-01
 VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 
 # Verified Boot
-BOARD_AVB_ROLLBACK_INDEX := 15
-BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := 15
+BOARD_AVB_ROLLBACK_INDEX := 26
+BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := 26
 
 # inherit from the proprietary version
-include vendor/motorola/fogo/BoardConfigVendor.mk
+include vendor/motorola/penang/BoardConfigVendor.mk
