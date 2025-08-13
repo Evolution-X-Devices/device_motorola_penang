@@ -9,7 +9,7 @@ ro.opa.device_model_id=motorola-penang
 ro.mot.build.customerid=global
 
 # NFC
-persist.nfc_cfg.config_file_name=libnfc-nci_SN220.conf
+persist.nfc_cfg.config_file_name=libnfc-nci_PN557.conf
 
 # Radio
-persist.vendor.radio.fi_supported=1
+persist.vendor.radio.fi_supported=0
