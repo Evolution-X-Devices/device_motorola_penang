@@ -16,7 +16,10 @@ TARGET_BOOTLOADER_BOARD_NAME := penang
 
 # HIDL
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
-ODM_MANIFEST_SKUS += dn n
+ODM_MANIFEST_SKUS += b d de dn n
+ODM_MANIFEST_B_FILES := $(DEVICE_PATH)/sku/manifest_b.xml
+ODM_MANIFEST_D_FILES := $(DEVICE_PATH)/sku/manifest_d.xml
+ODM_MANIFEST_DE_FILES := $(DEVICE_PATH)/sku/manifest_de.xml
 ODM_MANIFEST_DN_FILES := $(DEVICE_PATH)/sku/manifest_dn.xml
 ODM_MANIFEST_N_FILES := $(DEVICE_PATH)/sku/manifest_n.xml
 
