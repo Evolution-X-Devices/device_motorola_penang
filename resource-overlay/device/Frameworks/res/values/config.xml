@@ -7,19 +7,19 @@
     <!-- Vibrator pattern for feedback about a long screen/key press -->
     <integer-array name="config_longPressVibePattern">
         <item>0</item>
-        <item>70</item>
+        <item>60</item>
     </integer-array>
 
     <!-- Vibrator pattern for feedback about touching a virtual key -->
     <integer-array name="config_virtualKeyVibePattern">
         <item>0</item>
-        <item>30</item>
+        <item>50</item>
     </integer-array>
 
     <!-- Vibrator pattern for feedback when selecting an hour/minute tick of a Clock -->
     <integer-array name="config_clockTickVibePattern">
-        <item>0</item>
-        <item>20</item>
+        <item>125</item>
+        <item>30</item>
     </integer-array>
 
     <!-- Minimum screen brightness setting allowed by power manager.
@@ -123,7 +123,7 @@
         <item>210</item>
         <item>220</item>
         <item>225</item>
-        <item>225</item>
+        <item>250</item>
         <item>350</item>
         <item>400</item>
         <item>400</item>
@@ -181,7 +181,7 @@
     </integer-array>
 
     <!-- MMS user agent string -->
-    <string name="config_mms_user_agent" translatable="false">motog5g2024</string>
+    <string name="config_mms_user_agent" translatable="false">motog535g</string>
 
     <!-- MMS user agent prolfile url -->
     <string name="config_mms_user_agent_profile_url" translatable="false">http://uaprof.motorola.com/phoneconfig/motov1/Profile/motov1.rdf</string>
@@ -214,9 +214,9 @@
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
     <string name="config_mainBuiltInDisplayCutout" translatable="false">
-        M 333,48
-        a 27,27 0 1 0 54,0
-        a 27,27 0 1 0 -54,0
+        M 335,44
+        a 25,25 0 1 0 50,0
+        a 25,25 0 1 0 -50,0
         Z
         @left
     </string>
@@ -228,10 +228,10 @@
          config_mainBuiltInDisplayCutout
          -->
     <string name="config_mainBuiltInDisplayCutoutRectApproximation" translatable="false">
-        M -27 0
-        L -27 96
-        L 27 96
-        L 27 0
+        M -28,0
+        L 28,0
+        L 28,77
+        L -28,77
         Z
     </string>
 
@@ -258,7 +258,7 @@
     <array name="config_sfps_sensor_props_0" translatable="false">
         <item>local:4630946747577212033</item> <!--item>displayId</item-->
         <item>720</item> <!--item>sensorLocationX</item-->
-        <item>585</item> <!--item>sensorLocationY</item-->
+        <item>600</item> <!--item>sensorLocationY</item-->
         <item>200</item> <!--item>sensorRadius</item-->
     </array>
 
