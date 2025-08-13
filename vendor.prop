@@ -24,3 +24,6 @@ persist.vendor.nfc.config_file_name=libnfc-SN220-UICC.conf
 
 # Radio
 ro.vendor.radio.imei.sv=1
+
+# SKU specific properties
+import /vendor/etc/props/hardware.sku.${ro.boot.hardware.sku}.prop
