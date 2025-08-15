@@ -59,3 +59,4 @@ BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := 26
 
 # inherit from the proprietary version
 include vendor/motorola/penang/BoardConfigVendor.mk
+include vendor/motorola/penang-radio/BoardConfigVendor.mk
