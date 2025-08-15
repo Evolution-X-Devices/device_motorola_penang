@@ -103,3 +103,21 @@ on property:ro.carrier=softbank
 # IKSWT-90913: Force shutter tone on Japan ymobile carrier
 on property:ro.carrier=ymobile
     setprop audio.camerasound.force true
+
+on property:ro.carrier="ymobile"
+    setprop persist.vendor.audio.calfile1 /vendor/etc/acdbdata_b/Bluetooth_cal.acdb
+    setprop persist.vendor.audio.calfile2 /vendor/etc/acdbdata_b/General_cal.acdb
+    setprop persist.vendor.audio.calfile3 /vendor/etc/acdbdata_b/Global_cal.acdb
+    setprop persist.vendor.audio.calfile4 /vendor/etc/acdbdata_b/Handset_cal.acdb
+    setprop persist.vendor.audio.calfile5 /vendor/etc/acdbdata_b/Hdmi_cal.acdb
+    setprop persist.vendor.audio.calfile6 /vendor/etc/acdbdata_b/Headset_cal.acdb
+    setprop persist.vendor.audio.calfile7 /vendor/etc/acdbdata_b/Speaker_cal.acdb
+
+on property:ro.carrier="softbank"
+    setprop persist.vendor.audio.calfile1 /vendor/etc/acdbdata_b/Bluetooth_cal.acdb
+    setprop persist.vendor.audio.calfile2 /vendor/etc/acdbdata_b/General_cal.acdb
+    setprop persist.vendor.audio.calfile3 /vendor/etc/acdbdata_b/Global_cal.acdb
+    setprop persist.vendor.audio.calfile4 /vendor/etc/acdbdata_b/Handset_cal.acdb
+    setprop persist.vendor.audio.calfile5 /vendor/etc/acdbdata_b/Hdmi_cal.acdb
+    setprop persist.vendor.audio.calfile6 /vendor/etc/acdbdata_b/Headset_cal.acdb
+    setprop persist.vendor.audio.calfile7 /vendor/etc/acdbdata_b/Speaker_cal.acdb
