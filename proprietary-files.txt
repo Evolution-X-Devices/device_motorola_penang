@@ -1,6 +1,7 @@
 # All unpinned blobs are extracted from penang_g U1TPS34.29-83-7-3-6
 
 # ACDB Data
+vendor/etc/acdbdata/adsp_avs_config.acdb
 vendor/etc/acdbdata/Bluetooth_cal.acdb
 vendor/etc/acdbdata/General_cal.acdb
 vendor/etc/acdbdata/Global_cal.acdb
@@ -8,25 +9,29 @@ vendor/etc/acdbdata/Handset_cal.acdb
 vendor/etc/acdbdata/Hdmi_cal.acdb
 vendor/etc/acdbdata/Headset_cal.acdb
 vendor/etc/acdbdata/Speaker_cal.acdb
-vendor/etc/acdbdata/adsp_avs_config.acdb
+vendor/etc/acdbdata_b/Bluetooth_cal.acdb
+vendor/etc/acdbdata_b/General_cal.acdb
+vendor/etc/acdbdata_b/Global_cal.acdb
+vendor/etc/acdbdata_b/Handset_cal.acdb
+vendor/etc/acdbdata_b/Hdmi_cal.acdb
+vendor/etc/acdbdata_b/Headset_cal.acdb
+vendor/etc/acdbdata_b/Speaker_cal.acdb
 vendor/etc/acdbdata/nn_ns_models/candidate__2.7.1.31__3.0.0__eai_1.10_enpu1.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.00.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.2.0_0.1__3.0.0_0.0__eai_1.00.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.6.0_0.0__3.0.0_0.0__eai_1.00-1.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.6.0_0.0__3.0.0_0.0__eai_1.00.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.6.1_0.0__eai_v1.10.pmd
-vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__eai_1.10.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__eai_1.10_enpu1.pmd
+vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__eai_1.10.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.6.3_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.7.4_0.0__3.0.0_0.0__eai_1.10_enpu1.pmd
 vendor/etc/acdbdata/nn_vad_models/fai_3.0.0_0.0_eai_1.00.pmd
 
 # Audio firmware
-vendor/firmware/aw882xx_pid_2113_acf.bin
-vendor/firmware/aw_skt.bin
+vendor/firmware/aw87xxx_acf.bin
 
 # Audio libraries
 vendor/lib/libacdbloader.so
+vendor/lib64/libacdbloader.so
 
 # Camera
 vendor/lib64/camera/fdconfigpreview.bin
@@ -42,12 +47,12 @@ vendor/lib64/com.qualcomm.mcx.policy.mfl.so
 vendor/lib64/com.qualcomm.qti.mcx.usecase.extension.so
 vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.qti.chi.override.so
-vendor/lib64/libBST3DDNS.so
-vendor/lib64/libBSTHDRDETECT.so
-vendor/lib64/libBSTMultiExpoGainHDR.so
-vendor/lib64/libBSTNodeUtils.so
+vendor/lib64/libAncFaceDetect.so
+vendor/lib64/libancbase_fd.so
 vendor/lib64/libaidenoiser.so
 vendor/lib64/libaidenoiserv2.so
+vendor/lib64/libarcsoft_chi_utils.so
+vendor/lib64/libarcsoft_low_light_shot.so
 vendor/lib64/libbitmlengine.so
 vendor/lib64/libbitmlenginev2.so
 vendor/lib64/libcamera_nn_stub.so
@@ -65,7 +70,6 @@ vendor/lib64/libcamxswprocessalgo.so
 vendor/lib64/libcamxtintlessalgo.so
 vendor/lib64/libchilog.so
 vendor/lib64/libcom.qti.chinodeutils.so
-vendor/lib64/libhdr_impl.so
 vendor/lib64/libipebpsstriping.so
 vendor/lib64/libipebpsstriping170.so
 vendor/lib64/libjpege.so
@@ -81,6 +85,7 @@ vendor/lib64/libmmcamera_mfnr.so
 vendor/lib64/libmmcamera_mfnr_t4.so
 vendor/lib64/libmmcamera_pdpc.so
 vendor/lib64/libmot_afd.so
+vendor/lib64/libmpbase.so
 vendor/lib64/libofflinedump.so
 vendor/lib64/libofflinelog.so
 vendor/lib64/libopencv.so
@@ -95,13 +100,18 @@ vendor/lib64/libswregistrationalgo.so
 vendor/lib64/libsynx.so
 vendor/lib64/libtfestriping.so
 vendor/lib64/libthreadutils.so
+vendor/lib64/libvidhance_active_ois.so
+vendor/lib64/libvidhance_dmbr.so
+vendor/lib64/libvidhance_face_stabilizer.so
+vendor/lib64/libvidhance_fbc.so
+vendor/lib64/libvidhance_horizon_correction.so
 vendor/lib64/libvidhance.so
+vendor/lib64/libvidhance_stabilizer.so
+vendor/lib64/libvidhance_zoom_stabilization.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
 
 # Camera - Components
-vendor/lib64/camera/components/com.bst.node.hdrdetect.so
-vendor/lib64/camera/components/com.bst.node.mfnr.so
-vendor/lib64/camera/components/com.bst.node.yuvhdr.so
+vendor/lib64/camera/components/com.arcsoft.node.mfnr.so
 vendor/lib64/camera/components/com.qti.camx.chiiqutils.so
 vendor/lib64/camera/components/com.qti.eisv2.so
 vendor/lib64/camera/components/com.qti.eisv3.so
@@ -151,23 +161,18 @@ vendor/lib64/camera/components/com.qtistatic.stats.awb.so
 vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so
 vendor/lib64/camera/components/com.vidhance.node.ica.so
 vendor/lib64/camera/components/com.vidhance.node.processing.so
+vendor/lib64/camera/components/com.vidhance.stats.aec_dmbr.so
 vendor/lib64/camera/components/libdepthmapwrapper_secure.so
 
 # Camera - eeprom
-vendor/lib64/camera/com.mot.eeprom.mot_gt24p256c_s5kjns_eeprom.so
-vendor/lib64/camera/com.mot.eeprom.mot_s5k4h7_otp.so
-vendor/lib64/camera/com.mot.eeprom.mot_sc202acs_otp.so
+vendor/lib64/camera/com.mot.eeprom.mot_gt24p128e_s5kjn1_eeprom.so
+vendor/lib64/camera/com.mot.eeprom.mot_penang_ov02b10_otp.so
+vendor/lib64/camera/com.mot.eeprom.mot_penang_s5k4h7_otp.so
 
 # Camera - etc
-vendor/etc/bst_3ddns_1.cfg
-vendor/etc/bst_3ddns_2.cfg
-vendor/etc/bst_3ddns_3.cfg
-vendor/etc/bstconfig/hdrcfg.cfg
 vendor/etc/camera/anc_detect_model
 vendor/etc/camera/anc_track_model
-vendor/etc/camera/vidhance.lic
 vendor/etc/camera/vidhance_calibration
-vendor/etc/camera/vidhance_calibration_2rd
 
 # Camera - feature2
 vendor/lib64/com.qti.feature2.anchorsync.so
@@ -190,6 +195,7 @@ vendor/lib64/com.qti.feature2.swmf.so
 
 # Camera - flash
 vendor/lib64/camera/com.qti.flash.aw36518.so
+vendor/lib64/camera/com.qti.flash.lm3644.so
 
 # Camera - Motorola
 vendor/bin/hw/motorola.hardware.camera.desktop@2.0-service
@@ -198,28 +204,27 @@ vendor/lib64/motorola.hardware.camera.desktop@1.0.so
 vendor/lib64/motorola.hardware.camera.desktop@2.0.so
 
 # Camera - sensor
+vendor/lib64/camera/com.qti.sensor.mot_ov02b10.so
 vendor/lib64/camera/com.qti.sensor.mot_s5k4h7.so
-vendor/lib64/camera/com.qti.sensor.mot_s5kjns.so
-vendor/lib64/camera/com.qti.sensor.mot_sc202acs.so
-vendor/lib64/camera/com.qti.sensormodule.mot_fogo_s5k4h7_sunny.bin
-vendor/lib64/camera/com.qti.sensormodule.mot_fogo_s5kjns_qtech.bin
-vendor/lib64/camera/com.qti.sensormodule.mot_fogo_sc202acs_sunny.bin
+vendor/lib64/camera/com.qti.sensor.mot_s5kjn1.so
+vendor/lib64/camera/com.qti.sensormodule.mot_penang_ov02b10_aw_sunwin.bin
+vendor/lib64/camera/com.qti.sensormodule.mot_penang_ov02b10_ti_sunwin.bin
+vendor/lib64/camera/com.qti.sensormodule.mot_penang_s5k4h7_tsp_ff.bin
+vendor/lib64/camera/com.qti.sensormodule.mot_penang_s5kjn1_aw_qtech.bin
+vendor/lib64/camera/com.qti.sensormodule.mot_penang_s5kjn1_ti_qtech.bin
 
 # Camera - tuned
 vendor/lib64/camera/com.qti.tuned.default.bin
-vendor/lib64/camera/com.qti.tuned.mot_fogo_s5k4h7.bin
-vendor/lib64/camera/com.qti.tuned.mot_fogo_sc202acs.bin
-vendor/lib64/camera/com.qti.tuned.mot_fogor_s5kjns.bin
+vendor/lib64/camera/com.qti.tuned.mot_penang_ov02b10.bin
+vendor/lib64/camera/com.qti.tuned.mot_penang_s5k4h7.bin
+vendor/lib64/camera/com.qti.tuned.mot_penang_s5kjn1.bin
 
 # Capsense
 vendor/bin/capsense_reset
 
 # Display calibration data
-vendor/etc/qdcm_calib_data_mipi_mot_vid_boe_ili9883c_hdp_656_120.xml
-vendor/etc/qdcm_calib_data_mipi_mot_vid_txd_nt36528_hdp_656_120.xml
-
-# Display config
-vendor/etc/SVIConfig.xml
+vendor/etc/qdcm_calib_data_mipi_mot_vid_csot_hd_653_720p_120.xml
+vendor/etc/qdcm_calib_data_mipi_mot_vid_djn_hd_653_720p_120.xml
 
 # Euicc
 product/app/EuiccPartnerApp/EuiccPartnerApp.apk
@@ -227,24 +232,19 @@ product/etc/permissions/privapp-permissions-com.google.android.euicc.xml
 product/priv-app/EuiccGoogle/EuiccGoogle.apk
 
 # Fingerprint
-vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-goodixservice
+vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-chipone
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service-fpc
+vendor/bin/hw/chipone_ident
 vendor/bin/hw/fpc_ident
-vendor/bin/hw/goodix_ident
-vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-goodixservice.rc
+vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-chipone2.rc
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service-fpc2.rc
-vendor/etc/init/init.gf_ident.rc
 vendor/lib64/com.fingerprints.extension@1.0.so
-vendor/lib64/hw/fingerprint.goodix.default.so
-vendor/lib64/libgf_ca.so
-vendor/lib64/libgf_hal.so
-vendor/lib64/libgoodixhwfingerprint.so
-vendor/lib64/vendor.goodix.hardware.biometrics.fingerprint@3.0.so
+vendor/lib64/hw/chipone.fingerprint.default.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 vendor/usr/idc/uinput-fpc.idc
-vendor/usr/idc/uinput_nav.idc
+vendor/usr/idc/uinput-fpsensor.idc
 vendor/usr/keylayout/uinput-fpc.kl
-vendor/usr/keylayout/uinput_nav.kl
+vendor/usr/keylayout/uinput-fpsensor.kl
 
 # HotwordEnrollment
 product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk
@@ -253,61 +253,100 @@ system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
 # NFC - configs
-vendor/etc/libnfc-SN220-UICC.conf
+vendor/etc/libnfc-mtp-SN100_38_4MHZ.conf
+vendor/etc/libnfc-mtp-SN100.conf
+vendor/etc/libnfc-mtp-SN100-UICC.conf
+vendor/etc/libnfc-nci.conf
+vendor/etc/libnfc-nci_PN557.conf
+vendor/etc/libnfc-nci_PN560.conf
+vendor/etc/libnfc-nci_SN100.conf
 vendor/etc/libnfc-nci_SN220.conf
+vendor/etc/libnfc-nxp.conf
+vendor/etc/libnfc-nxp-pnscr.conf
+vendor/etc/libnfc-PN557.conf
+vendor/etc/libnfc-qrd-SN100_38_4MHZ.conf
+vendor/etc/libnfc-qrd-SN100.conf
+vendor/etc/libnfc-SN220.conf
+vendor/etc/libnfc-SN220-UICC.conf
 
 # NFC firmware
+vendor/lib64/libpn557_fw.so
+vendor/lib64/libsn100u_fw.so
 vendor/lib64/libsn220u_fw.so
 
 # OEM
 vendor/etc/vhw.xml
 
 # SAR firmware
-vendor/firmware/aw963xx_reg_0.bin
+vendor/firmware/aw87xxx_acf.bin
 
 # Sensors
 vendor/lib64/sensors.moto.so
 vendor/lib64/sensors.ssc.so
 
 # Sensor - configs
-vendor/etc/sensors/config/bmp5_0.json
-vendor/etc/sensors/config/icm4x6xa.json
-vendor/etc/sensors/config/icp201xx_0.json
+vendor/etc/sensors/config/holi_bmi3x0.json
+vendor/etc/sensors/config/holi_default_sensors.json
+vendor/etc/sensors/config/holi_dynamic_sensors.json
+vendor/etc/sensors/config/holi_icm4x6xa.json
+vendor/etc/sensors/config/holi_mmc56x3x_0.json
+vendor/etc/sensors/config/holi_power_0.json
+vendor/etc/sensors/config/holi_qmc6308_0.json
+vendor/etc/sensors/config/holi_tmd2755_0.json
 vendor/etc/sensors/config/mot_camgest.json
+vendor/etc/sensors/config/mot_tap.json
 vendor/etc/sensors/config/sns_amd.json
 vendor/etc/sensors/config/sns_amd_sw_disabled.json
 vendor/etc/sensors/config/sns_amd_sw_enabled.json
+vendor/etc/sensors/config/sns_aont.json
+vendor/etc/sensors/config/sns_basic_gestures.json
+vendor/etc/sensors/config/sns_bring_to_ear.json
+vendor/etc/sensors/config/sns_ccd.json
+vendor/etc/sensors/config/sns_ccd_v2_walk.json
+vendor/etc/sensors/config/sns_ccd_v3_1_walk.json
+vendor/etc/sensors/config/sns_ccd_v3_walk.json
 vendor/etc/sensors/config/sns_cm.json
+vendor/etc/sensors/config/sns_dae.json
+vendor/etc/sensors/config/sns_device_orient.json
 vendor/etc/sensors/config/sns_diag_filter.json
+vendor/etc/sensors/config/sns_direct_channel.json
+vendor/etc/sensors/config/sns_distance_bound.json
+vendor/etc/sensors/config/sns_dpc.json
+vendor/etc/sensors/config/sns_facing.json
 vendor/etc/sensors/config/sns_fmv.json
 vendor/etc/sensors/config/sns_fmv_legacy.json
 vendor/etc/sensors/config/sns_geomag_rv.json
 vendor/etc/sensors/config/sns_gyro_cal.json
+vendor/etc/sensors/config/sns_heart_rate.json
 vendor/etc/sensors/config/sns_mag_cal.json
+vendor/etc/sensors/config/sns_mag_cal_legacy.json
+vendor/etc/sensors/config/sns_multishake.json
+vendor/etc/sensors/config/sns_pedometer.json
 vendor/etc/sensors/config/sns_rmd.json
 vendor/etc/sensors/config/sns_rotv.json
 vendor/etc/sensors/config/sns_smd.json
+vendor/etc/sensors/config/sns_tilt.json
+vendor/etc/sensors/config/sns_tilt_sw_disabled.json
 vendor/etc/sensors/config/sns_tilt_sw_enabled.json
 vendor/etc/sensors/config/sns_tilt_to_wake.json
 vendor/etc/sensors/config/sns_wrist_pedo.json
-vendor/etc/sensors/config/strait_bmi3x0_0.json
-vendor/etc/sensors/config/strait_default_sensors.json
-vendor/etc/sensors/config/strait_dynamic_sensors.json
-vendor/etc/sensors/config/strait_mmc56x3x_0.json
-vendor/etc/sensors/config/strait_mn78xxx_0.json
-vendor/etc/sensors/config/strait_power_0.json
-vendor/etc/sensors/config/strait_qmc6308_0.json
 vendor/etc/sensors/sns_reg_config
 
 # Thermal engine - configs
-vendor/etc/thermal-engine-fogo-camera.conf
-vendor/etc/thermal-engine-fogo-game-normal.conf
-vendor/etc/thermal-engine-fogo-game-perf.conf
-vendor/etc/thermal-engine-fogo.conf
 vendor/etc/thermal-engine.conf
+vendor/etc/thermal-engine-penang-APEU.conf
+vendor/etc/thermal-engine-penang-camera.conf
+vendor/etc/thermal-engine-penang.conf
+vendor/etc/thermal-engine-penang-game-normal.conf
+vendor/etc/thermal-engine-penang-game-perf.conf
+vendor/etc/thermal-engine-penang-JPSB-camera.conf
+vendor/etc/thermal-engine-penang-JPSB.conf
+vendor/etc/thermal-engine-penang-JPSB-game-normal.conf
+vendor/etc/thermal-engine-penang-JPSB-game-perf.conf
+vendor/etc/thermal-engine-penang-JPSB-voicecall.conf
 
 # Touchscreen firmware
-vendor/firmware/ILITEK_FW
-vendor/firmware/NT36xxx_MP_Setting_Criteria_606F.csv
-vendor/firmware/novatek_ts_fw.bin
-vendor/firmware/novatek_ts_mp.bin
+vendor/firmware/djn_novatek_ts_fw.bin
+vendor/firmware/djn_novatek_ts_mp.bin
+vendor/firmware/focaltech-csot-ft8057-05-0000-penang.bin
+vendor/firmware/NT36xxx_MP_Setting_Criteria_6058.csv
