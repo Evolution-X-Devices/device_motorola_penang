@@ -73,8 +73,43 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.hcef.xml \
     frameworks/native/data/etc/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.uicc.xml \
     frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
-    frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml \
+    frameworks/native/data/etc/android.hardware.se.omapi.ese.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.se.omapi.ese.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/permissions/unavail.android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/unavail.android.hardware.telephony.euicc.xml
+
+DEVICES_SKUS := b d
+
+PRODUCT_COPY_FILES += \
+$(foreach DEVICE_SKU, $(DEVICES_SKUS), \
+    $(LOCAL_PATH)/permissions/unavail.android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_$(DEVICE_SKU)/unavail.android.hardware.nfc.hce.xml \
+    $(LOCAL_PATH)/permissions/unavail.android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_$(DEVICE_SKU)/unavail.android.hardware.nfc.hcef.xml \
+    $(LOCAL_PATH)/permissions/unavail.android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_$(DEVICE_SKU)/unavail.android.hardware.nfc.uicc.xml \
+    $(LOCAL_PATH)/permissions/unavail.android.hardware.nfc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_$(DEVICE_SKU)/unavail.android.hardware.nfc.xml \
+    $(LOCAL_PATH)/permissions/unavail.android.hardware.se.omapi.ese.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_$(DEVICE_SKU)/unavail.android.hardware.se.omapi.ese.xml)
+
+NFC_DEVICE_SKUS := de
+
+PRODUCT_COPY_FILES += \
+$(foreach DEVICE_SKU, $(NFC_DEVICE_SKUS), \
+    frameworks/native/data/etc/android.hardware.nfc.ese.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_$(DEVICE_SKU)/android.hardware.nfc.ese.xml)
+
+ESE_DEVICE_SKUS := n
+
+PRODUCT_COPY_FILES += \
+$(foreach DEVICE_SKU, $(ESE_DEVICE_SKUS), \
+    $(LOCAL_PATH)/permissions/unavail.android.hardware.se.omapi.ese.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_$(DEVICE_SKU)/unavail.android.hardware.se.omapi.ese.xml)
+
+ESIM_DEVICE_SKUS := dn
+
+PRODUCT_COPY_FILES += \
+$(foreach DEVICE_SKU, $(ESIM_DEVICE_SKUS), \
+    $(LOCAL_PATH)/permissions/unavail.android.hardware.se.omapi.ese.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_$(DEVICE_SKU)/unavail.android.hardware.se.omapi.ese.xml)
+
+PRODUCT_COPY_FILES += \
+$(foreach DEVICE_SKU, $(ESIM_DEVICE_SKUS), \
+    frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_$(DEVICE_SKU)/android.hardware.telephony.euicc.xml)
 
 # Properties
 PRODUCT_PACKAGES += \
