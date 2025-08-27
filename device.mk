@@ -30,6 +30,7 @@ PRODUCT_PACKAGES += \
     FrameworksResDeviceXT2335-6 \
     LineageApertureAppDevice \
     ProductFrameworksResDevice \
+    SettingsResDevice \
     SystemUIResDevice \
     WifiResDevice \
     WifiResDeviceXT2335-3 \
