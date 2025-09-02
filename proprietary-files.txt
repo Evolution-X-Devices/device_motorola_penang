@@ -348,11 +348,11 @@ vendor/etc/thermal-engine-penang-JPSB-voicecall.conf
 # Touchscreen firmware
 vendor/firmware/djn_novatek_ts_fw.bin
 vendor/firmware/djn_novatek_ts_mp.bin
-vendor/firmware/focaltech-csot-ft8057-05-0000-penang.bin
+vendor/firmware/focaltech-csot-ft8057-05-0000-penang.bin:vendor/firmware/focaltech_ts_fw_csot.bin
 vendor/firmware/NT36xxx_MP_Setting_Criteria_6058.csv
 
 # Touchscreen firmware (recovery)
 vendor/firmware/djn_novatek_ts_fw.bin:recovery/root/vendor/firmware/djn_novatek_ts_fw.bin
 vendor/firmware/djn_novatek_ts_mp.bin:recovery/root/vendor/firmware/djn_novatek_ts_mp
-vendor/firmware/focaltech-csot-ft8057-05-0000-penang.bin:recovery/root/vendor/firmware/focaltech-csot-ft8057-05-0000-penang.bin
+vendor/firmware/focaltech-csot-ft8057-05-0000-penang.bin:recovery/root/vendor/firmware/focaltech_ts_fw_csot.bin
 vendor/firmware/NT36xxx_MP_Setting_Criteria_6058.csv:recovery/root/vendor/firmware/NT36xxx_MP_Setting_Criteria_6058.csv
