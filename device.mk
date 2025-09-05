@@ -63,6 +63,9 @@ PRODUCT_PACKAGES += \
     init.mmi.overlay.rc \
     init.oem.fingerprint2.sh
 
+# LiveDisplay
+$(call soong_config_set,livedisplay_sysfs,enable_ab,true)
+
 # Moto Camera 4
 TARGET_MOTCAMERA4 := penang
 TARGET_USES_MOTCAMERA4 := true
