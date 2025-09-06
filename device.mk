@@ -32,6 +32,7 @@ PRODUCT_PACKAGES += \
     ProductFrameworksResDevice \
     SettingsResDevice \
     SystemUIResDevice \
+    TurboPowerOverlay \
     WifiResDevice \
     WifiResDeviceXT2335-3 \
     WifiResDeviceXT2335-4 \
