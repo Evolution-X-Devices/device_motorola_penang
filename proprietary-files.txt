@@ -1,4 +1,4 @@
-# All unpinned blobs are extracted from penang_g U1TPS34.29-83-7-3-6
+# All unpinned blobs are extracted from penang_g U1TPS34.29-83-7-3-7
 
 # ACDB Data
 vendor/etc/acdbdata/adsp_avs_config.acdb

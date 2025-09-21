@@ -23,6 +23,6 @@ PRODUCT_MODEL := moto g53 5G
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="penang_g-user 14 U1TPS34.29-83-7-3-6 b60833-2769a release-keys MUR1-0.100" \
-    BuildFingerprint=motorola/penang_g/penang:14/U1TPS34.29-83-7-3-6/b60833-2769a:user/release-keys \
+    BuildDesc="penang_g-user 11 U1TPS34.29-83-7-3-7 bb262e release-keys" \
+    BuildFingerprint=motorola/penang_g/penang:11/U1TPS34.29-83-7-3-7/bb262e:user/release-keys \
     DeviceProduct=penang_g
