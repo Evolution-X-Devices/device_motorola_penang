@@ -8,17 +8,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 TARGET_SUPPORTS_OMX_SERVICE := false
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from fogos device
-$(call inherit-product, device/motorola/fogo/device.mk)
+# Inherit from penang device
+$(call inherit-product, device/motorola/penang/device.mk)
 
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_fogo
-PRODUCT_DEVICE := fogo
+PRODUCT_NAME := lineage_penang
+PRODUCT_DEVICE := penang
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := moto g 5G - 2024
+PRODUCT_MODEL := moto g53 5G
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
